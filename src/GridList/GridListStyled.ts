@@ -1,6 +1,14 @@
 import styled from "@emotion/styled";
 
-export const GridListStyled = styled.ul``;
+export const GridListStyled = styled.ul`
+  @media (min-width: 1280px) {
+    display: grid;
+    gap: 30px;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+  }
+`;
 
 export const GridItem = styled.li`
   padding-top: 26px;
@@ -36,6 +44,10 @@ export const GridItem = styled.li`
 
   &:not(:last-of-type) {
     margin-bottom: 24px;
+
+    @media (min-width: 1280px) {
+      margin-bottom: 0;
+    }
   }
 
   &:nth-of-type(1) {
@@ -62,6 +74,10 @@ export const GridItem = styled.li`
       color: #cfcfcf;
       opacity: 0.7;
     }
+
+    @media (min-width: 1280px) {
+      grid-column: span 2;
+    }
   }
 
   &:nth-of-type(2) {
@@ -83,6 +99,10 @@ export const GridItem = styled.li`
     & p {
       color: #fff;
       opacity: 0.7;
+    }
+
+    @media (min-width: 1280px) {
+      grid-column: span 1;
     }
   }
 
@@ -106,6 +126,10 @@ export const GridItem = styled.li`
       color: #48556a;
       opacity: 0.7;
     }
+
+    @media (min-width: 1280px) {
+      grid-column: span 1;
+    }
   }
 
   &:nth-of-type(4) {
@@ -128,27 +152,37 @@ export const GridItem = styled.li`
       color: #ffffff;
       opacity: 0.7;
     }
+
+    @media (min-width: 1280px) {
+      grid-column: span 2;
+      grid-row: 2;
+    }
   }
 
   &:nth-of-type(5) {
     background-color: #ffffff;
 
     & h4 {
-      color: #48556A;
+      color: #48556a;
     }
 
     & h6 {
-      color: #48556A;
+      color: #48556a;
     }
 
     & span {
-      color: #48556A;
+      color: #48556a;
       opacity: 0.7;
     }
 
     & p {
-      color: #48556A;
+      color: #48556a;
       opacity: 0.7;
+    }
+
+    @media (min-width: 1280px) {
+      grid-column: span 2;
+      grid-row: 1 / span 2;
     }
   }
 `;
