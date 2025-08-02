@@ -1,93 +1,123 @@
-const GridList = () => {
-    return ( 
-        <ul>
-            <li>
-                <div>
-                    <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <h3>Daniel Clifford</h3>
-                        <p>Verified Graduate</p>
-                    </div>
-                </div>
-                <p>
-                    I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.
-                </p>
-                <p>
-                    “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the  best - and most grueling - time of my life. Since completing the course, I’ve  successfully switched careers, working as a Software Engineer at a VR startup. ”
-                </p>
-            </li>
-            <li>
-                 <div>
-                    <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <h3>Jonathan Walters</h3>
-                        <p>Verified Graduate</p>
-                    </div>
-                </div>
-                <p>
-                   The team was very supportive and kept me motivated
-                </p>
-                <p>
-                   “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I’ve made in myself. “
-                </p>
-            </li>
-            <li>
-                 <div>
-                    <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <h3>Jeanette Harmon</h3>
-                        <p>Verified Graduate</p>
-                    </div>
-                </div>
-                <p>
-                  An overall wonderful and rewarding experience
-                </p>
-                <p>
-                 “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living while doing something I love. ”
-                </p>
-            </li>
-            <li>
-                 <div>
-                    <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <h3>Patrick Abrams</h3>
-                        <p>Verified Graduate</p>
-                    </div>
-                </div>
-                <p>
-                 Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and learning from their experiences was easy.
-                </p>
-                <p>
-                “ The staff seem genuinely concerned about my progress which I find really refreshing. The program gave me the confidence necessary to be able to go out in the world and present myself as a capable junior developer. The standard is above the rest. You will get the personal attention you need from an incredible community of smart and amazing people.  ”
-                </p>
-            </li>
-            <li>
-                  <div>
-                    <div>
-                        <img src="" alt="" />
-                    </div>
-                    <div>
-                        <h3>Kira Whittle</h3>
-                        <p>Verified Graduate</p>
-                    </div>
-                </div>
-                <p>
-                Such a life-changing experience. Highly recommended!
-                </p>
-                <p>
-                “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from professionals who can help me learn programming step by step. I was encouraged to enroll by a former student of theirs who can only say wonderful things about the program. The entire curriculum and staff did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial could ever have. In fact, I’ve often referred to it during interviews as an example of my developent experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers. 100% recommend!  ”
-                </p>
-            </li>
-        </ul>
-     );
-}
- 
+import * as SC from "./GridListStyled";
+
+import daniel from "../assets/images/image-daniel.jpg";
+import jonathan from "../assets/images/image-jonathan.jpg";
+import jeanette from "../assets/images/image-jeanette.jpg";
+import patrick from "../assets/images/image-patrick.jpg";
+import kira from "../assets/images/image-kira.jpg";
+
+const GridList: React.FC = () => {
+  return (
+    <SC.GridListStyled>
+      <SC.GridItem>
+        <SC.AvaCon>
+          <SC.AvaThumb>
+            <img src={daniel} alt="daniel" />
+          </SC.AvaThumb>
+          <SC.AvaContentCon>
+            <h4>Daniel Clifford</h4>
+            <span>Verified Graduate</span>
+          </SC.AvaContentCon>
+        </SC.AvaCon>
+        <h6>
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </h6>
+        <p>
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been
+          looking to make a transition and have heard some people who had an
+          amazing experience here. I signed up for the free intro course and
+          found it incredibly fun! I enrolled shortly thereafter. The next 12
+          weeks was the best - and most grueling - time of my life. Since
+          completing the course, I’ve successfully switched careers, working as
+          a Software Engineer at a VR startup. ”
+        </p>
+      </SC.GridItem>
+      <SC.GridItem>
+        <SC.AvaCon>
+          <SC.AvaThumb>
+            <img src={jonathan} alt="jonathan" />
+          </SC.AvaThumb>
+          <SC.AvaContentCon>
+            <h4>Jonathan Walters</h4>
+            <span>Verified Graduate</span>
+          </SC.AvaContentCon>
+        </SC.AvaCon>
+        <h6>The team was very supportive and kept me motivated</h6>
+        <p>
+          “ I started as a total newbie with virtually no coding skills. I now
+          work as a mobile engineer for a big company. This was one of the best
+          investments I’ve made in myself. “
+        </p>
+      </SC.GridItem>
+      <SC.GridItem>
+        <SC.AvaCon>
+          <SC.AvaThumb>
+            <img src={jeanette} alt="jeanette" />
+          </SC.AvaThumb>
+          <SC.AvaContentCon>
+            <h4>Jeanette Harmon</h4>
+            <span>Verified Graduate</span>
+          </SC.AvaContentCon>
+        </SC.AvaCon>
+        <h6>An overall wonderful and rewarding experience</h6>
+        <p>
+          “ Thank you for the wonderful experience! I now have a job I really
+          enjoy, and make a good living while doing something I love. ”
+        </p>
+      </SC.GridItem>
+      <SC.GridItem>
+        <SC.AvaCon>
+          <SC.AvaThumb>
+            <img src={patrick} alt="patrick" />
+          </SC.AvaThumb>
+          <SC.AvaContentCon>
+            <h4>Patrick Abrams</h4>
+            <span>Verified Graduate</span>
+          </SC.AvaContentCon>
+        </SC.AvaCon>
+        <h6>
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </h6>
+        <p>
+          “ The staff seem genuinely concerned about my progress which I find
+          really refreshing. The program gave me the confidence necessary to be
+          able to go out in the world and present myself as a capable junior
+          developer. The standard is above the rest. You will get the personal
+          attention you need from an incredible community of smart and amazing
+          people. ”
+        </p>
+      </SC.GridItem>
+      <SC.GridItem>
+        <SC.AvaCon>
+          <SC.AvaThumb>
+            <img src={kira} alt="kira" />
+          </SC.AvaThumb>
+          <SC.AvaContentCon>
+            <h4>Kira Whittle</h4>
+            <span>Verified Graduate</span>
+          </SC.AvaContentCon>
+        </SC.AvaCon>
+        <h6>Such a life-changing experience. Highly recommended!</h6>
+        <p>
+          “ Before joining the bootcamp, I’ve never written a line of code. I
+          needed some structure from professionals who can help me learn
+          programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program.
+          The entire curriculum and staff did not disappoint. They were very
+          hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the
+          next level in a way that no tutorial could ever have. In fact, I’ve
+          often referred to it during interviews as an example of my developent
+          experience. It certainly helped me land a job as a full-stack
+          developer after receiving multiple offers. 100% recommend! ”
+        </p>
+      </SC.GridItem>
+    </SC.GridListStyled>
+  );
+};
+
 export default GridList;

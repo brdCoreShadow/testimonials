@@ -1,7 +1,16 @@
 
 @font-face {
-  font-family: "Poppins";
-  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-family: "Medium";
+  src: url("./assets/fonts/Barlow/Barlow-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Semi";
+  src: url("./assets/fonts/Barlow/Barlow-SemiBold.ttf") format("truetype");
+}
+
+h4{
+  font-family: "Medium";
 }
 
 *,
