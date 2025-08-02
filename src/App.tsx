@@ -1,12 +1,13 @@
+import * as SC from "./AppStyled"
 
+import GridList from "./GridList/GridList";
 
-const App:React.FC = () => {
-
+const App: React.FC = () => {
   return (
-  <div>
+    <SC.AppCon>
+      <GridList />
+    </SC.AppCon>
+  );
+};
 
-  </div>
-  )
-}
-
-export default App
+export default App;
