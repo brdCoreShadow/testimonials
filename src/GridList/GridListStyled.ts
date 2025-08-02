@@ -46,11 +46,11 @@ export const GridItem = styled.li`
     background-repeat: no-repeat;
     background-position: top right 24px;
 
-    & > h6 {
+    & h4 {
       color: #fff;
     }
 
-    & h4 {
+    & h6 {
       color: #fff;
     }
 
@@ -64,8 +64,92 @@ export const GridItem = styled.li`
     }
   }
 
-  &:nth-of-type(2){
-    background-color: #48556A;
+  &:nth-of-type(2) {
+    background-color: #48556a;
+
+    & h4 {
+      color: #fff;
+    }
+
+    & h6 {
+      color: #fff;
+    }
+
+    & span {
+      color: #fff;
+      opacity: 0.7;
+    }
+
+    & p {
+      color: #fff;
+      opacity: 0.7;
+    }
+  }
+
+  &:nth-of-type(3) {
+    background-color: #fff;
+
+    & h4 {
+      color: #48556a;
+    }
+
+    & h6 {
+      color: #48556a;
+    }
+
+    & span {
+      color: #48556a;
+      opacity: 0.7;
+    }
+
+    & p {
+      color: #48556a;
+      opacity: 0.7;
+    }
+  }
+
+  &:nth-of-type(4) {
+    background-color: #19202d;
+
+    & h4 {
+      color: #fff;
+    }
+
+    & h6 {
+      color: #ecf2f8;
+    }
+
+    & span {
+      color: #ffffff;
+      opacity: 0.7;
+    }
+
+    & p {
+      color: #ffffff;
+      opacity: 0.7;
+    }
+  }
+
+  &:nth-of-type(5) {
+    background-color: #ffffff;
+
+    & h4 {
+      color: #48556A;
+    }
+
+    & h6 {
+      color: #48556A;
+    }
+
+    & span {
+      color: #48556A;
+      opacity: 0.7;
+    }
+
+    & p {
+      color: #48556A;
+      opacity: 0.7;
+    }
   }
 `;
 
