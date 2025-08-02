@@ -1,12 +1,11 @@
+import GridList from "./GridList/GridList";
 
-
-const App:React.FC = () => {
-
+const App: React.FC = () => {
   return (
-  <div>
+    <div>
+      <GridList />
+    </div>
+  );
+};
 
-  </div>
-  )
-}
-
-export default App
+export default App;
